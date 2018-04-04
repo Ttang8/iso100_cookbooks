@@ -1,0 +1,82 @@
+.navbar {
+  position: fixed;
+  width: 100%;
+  background-color: white;
+  opacity: .8;
+  z-index: 100;
+}
+
+header {
+  margin-left: 10px;
+  margin-right: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 20px;
+  border-bottom: 1px solid lightgray;
+  font-family: 'Roboto', sans-serif;
+}
+
+.logo-pic {
+  display: flex;
+  align-items: center;
+  height: 70px;
+  width: 70px;
+  margin-bottom: 20px;
+  font-size: 40px;
+}
+
+.sitename {
+  align-items: center;
+  font-weight: 700px;
+}
+
+.sitename-100 {
+  font-weight: 700px;
+}
+
+.sitename-container {
+  display: flex;
+  align-items: baseline;
+}
+
+.logo-and-pic-container {
+  display: flex;
+  align-items: center;
+  height: 60px;
+}
+
+.welcome-user {
+  display: flex;
+  align-items: center;
+}
+
+.login-button, .signup-button {
+  background-color: rgb(7, 207, 88);
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.login-button:hover, .signup-button:hover {
+  background-color: lightgreen;
+}
+
+.iso100:hover {
+  color: gray;
+}
+
+h1 {
+  font-size: 35px;
+}
+
+.search-and-upload {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.upload-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

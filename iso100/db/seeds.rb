@@ -1,0 +1,76 @@
+# This file should contain all the record creation needed to seed the database with its default values.
+# The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).
+#
+# Examples:
+#
+#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
+#   Character.create(name: 'Luke', movie: movies.first)
+
+User.destroy_all
+Photo.destroy_all
+Comment.destroy_all
+Tag.destroy_all
+
+user1 = User.create(username: 'GuestAccount', password: 'password')
+user2 = User.create(username: 'KatKnox', password: 'password')
+user3 = User.create(username: 'SanFran4Life', password: 'password')
+user4 = User.create(username: 'Bobby', password: 'password')
+user5 = User.create(username: 'Lala', password: 'password')
+user6 = User.create(username: 'FinalFantasy', password: 'password')
+user7 = User.create(username: 'Squirtle', password: 'password')
+user8 = User.create(username: 'Overclocked', password: 'password')
+user9 = User.create(username: 'Kelly', password: 'password')
+user10 = User.create(username: 'Animus', password: 'password')
+
+
+
+photo2 = Photo.create(title: 'Sunny Day', description: 'Bikes are cool', image_url: 'https://res.cloudinary.com/iso100app/image/upload/v1501203654/summer-sport-bikes-bicycles_wkyz5g.jpg', user_id: user1.id)
+photo8 = Photo.create(title: 'Lights Lights Lights', description: '', image_url: 'https://res.cloudinary.com/iso100app/image/upload/v1501203651/san-francisco-1633202_1920_o1wvty.jpg', user_id: user1.id)
+photo16 = Photo.create(title: 'Public Day', description: 'Bike on street', image_url: 'https://res.cloudinary.com/iso100app/image/upload/v1501203650/pexels-photo-494951_wqtmhy.jpg', user_id: user2.id)
+photo40 = Photo.create(title: 'Immaculate', description: 'Breathtaking view', image_url: 'https://res.cloudinary.com/iso100app/image/upload/v1501203646/france-2218300_1920_znnoe1.jpg', user_id: user4.id)
+photo10 = Photo.create(title: 'Birds', description: 'Couple of colorful birds', image_url: 'https://res.cloudinary.com/iso100app/image/upload/v1501203652/rainbow-lorikeet-parrots-australia-rainbow-37833_kvzj69.jpg', user_id: user1.id)
+photo43 = Photo.create(title: 'Purple Haze', description: '', image_url: 'https://res.cloudinary.com/iso100app/image/upload/v1501203646/bridge-1660417_1920_o6myuv.jpg', user_id: user5.id)
+photo20 = Photo.create(title: 'Bike Love', description: 'My baby', image_url: 'https://res.cloudinary.com/iso100app/image/upload/v1501203650/pexels-photo-478442_ejjzhf.jpg', user_id: user2.id)
+photo4 = Photo.create(title: 'Night Life', description: 'Japan at Night', image_url: 'https://res.cloudinary.com/iso100app/image/upload/v1501203652/shibuya-2223492_1920_za1dlr.jpg', user_id: user1.id)
+photo21 = Photo.create(title: 'Home Day', description: 'My view from home', image_url: 'https://res.cloudinary.com/iso100app/image/upload/v1501203650/pexels-photo-436784_fpzziv.jpg', user_id: user3.id)
+photo22 = Photo.create(title: 'Fantasy', description: 'Space journey', image_url: 'https://res.cloudinary.com/iso100app/image/upload/v1501203650/pexels-photo-414826_z6rjvc.jpg', user_id: user3.id)
+photo39 = Photo.create(title: 'Night Bridge', description: 'Love the lights at night.', image_url: 'https://res.cloudinary.com/iso100app/image/upload/v1501203647/golden-gate-2251108_1920_zcuvtm.jpg', user_id: user4.id)
+photo6 = Photo.create(title: 'San Francisco Lights', description: 'View of TransAmerican', image_url: 'https://res.cloudinary.com/iso100app/image/upload/v1501203652/san-francisco-1633204_1920_wgpkro.jpg', user_id: user1.id)
+photo23 = Photo.create(title: 'Tech Life', description: 'Cant live without em', image_url: 'https://res.cloudinary.com/iso100app/image/upload/v1501203649/pexels-photo-286565_rzvupb.jpg', user_id: user3.id)
+photo1 = Photo.create(title: 'Sushi', description: 'Food in Japan', image_url: 'https://res.cloudinary.com/iso100app/image/upload/v1501203653/tokyo-2091357_1920_ebyuzu.jpg', user_id: user1.id)
+photo5 = Photo.create(title: 'Foggy Bridge', description: 'San Francisco on a foggy day', image_url: 'https://res.cloudinary.com/iso100app/image/upload/v1501203652/san-francisco-2443452_1920_smwbte.jpg', user_id: user1.id)
+photo24 = Photo.create(title: 'Note Taking', description: 'Need these for everyday operation', image_url: 'https://res.cloudinary.com/iso100app/image/upload/v1501203649/pexels-photo-265610_ei94kc.jpg', user_id: user3.id)
+photo34 = Photo.create(title: 'Simplicity', description: 'White theme', image_url: 'https://res.cloudinary.com/iso100app/image/upload/v1501203647/mockup-apple-samsung-product-85895_hyzwwx.jpg', user_id: user4.id)
+photo7 = Photo.create(title: 'San Fran Night', description: 'Beautiful view of the city', image_url: 'https://res.cloudinary.com/iso100app/image/upload/v1501203652/san-francisco-1633203_1920_cdbnc2.jpg', user_id: user1.id)
+photo19 = Photo.create(title: 'Rock Tower', description: 'Balance is key', image_url: 'https://res.cloudinary.com/iso100app/image/upload/v1501203650/pexels-photo-484701_h7sc0o.jpg', user_id: user2.id)
+photo9 = Photo.create(title: 'Eagle Eye', description: 'Bird watching', image_url: 'https://res.cloudinary.com/iso100app/image/upload/v1501203651/red-kite-bird-of-prey-milan-raptor-86462_ptciml.jpg', user_id: user1.id)
+photo48 = Photo.create(title: 'Tree of Life', description: '', image_url: 'https://res.cloudinary.com/iso100app/image/upload/v1501203645/amazing-animal-beautiful-beautifull_a2bluw.jpg', user_id: user5.id)
+photo14 = Photo.create(title: 'Bike Alone', description: 'Bikes on bikes', image_url: 'https://res.cloudinary.com/iso100app/image/upload/v1501203651/pexels-photo-504307_biw92r.jpg', user_id: user2.id)
+photo11 = Photo.create(title: 'Camera Eye', description: 'Love picture taking', image_url: 'https://res.cloudinary.com/iso100app/image/upload/v1501203651/pexels-photo_sv37sh.jpg', user_id: user2.id)
+photo49 = Photo.create(title: 'The Big Apple', description: 'Love it here', image_url: 'https://res.cloudinary.com/iso100app/image/upload/v1501217950/pexels-photo-510888_mfitar.jpg', user_id: user5.id)
+photo15 = Photo.create(title: 'Beach Day', description: 'Sand in your toes', image_url: 'https://res.cloudinary.com/iso100app/image/upload/v1501203651/pexels-photo-500044_hgxelk.jpg', user_id: user2.id)
+photo25 = Photo.create(title: 'Workload', description: 'Getting buried in studies', image_url: 'https://res.cloudinary.com/iso100app/image/upload/v1501203648/pexels-photo-261909_gwark9.jpg', user_id: user3.id)
+photo3 = Photo.create(title: 'City Towers', description: 'Japan is fun', image_url: 'https://res.cloudinary.com/iso100app/image/upload/v1501203656/shinjuku-2190027_1920_g8lxh2.jpg', user_id: user1.id)
+photo12 = Photo.create(title: 'Eye in the Sky', description: 'Got a new toy', image_url: 'https://res.cloudinary.com/iso100app/image/upload/v1501203651/pexels-photo-518674_lwtdqy.jpg', user_id: user2.id)
+photo26 = Photo.create(title: 'Serenity', description: 'Purpleness', image_url: 'https://res.cloudinary.com/iso100app/image/upload/v1501203649/pexels-photo-258109_ilee2f.jpg', user_id: user3.id)
+photo28 = Photo.create(title: 'Going Out', description: 'What I leave home with', image_url: 'https://res.cloudinary.com/iso100app/image/upload/v1501203650/pexels-photo-159239_xtaezi.jpg', user_id: user3.id)
+photo29 = Photo.create(title: 'Island', description: 'Sandy beach', image_url: 'https://res.cloudinary.com/iso100app/image/upload/v1501203648/pexels-photo-149542_baoice.jpg', user_id: user3.id)
+photo17 = Photo.create(title: 'Paradise', description: 'Was a hot day', image_url: 'https://res.cloudinary.com/iso100app/image/upload/v1501203650/pexels-photo-490951_d3pt0s.jpg', user_id: user2.id)
+photo32 = Photo.create(title: 'Beautiful Bridge', description: 'On vacation!!', image_url: 'https://res.cloudinary.com/iso100app/image/upload/v1501203648/paris-2499022_1920_fg91gy.jpg', user_id: user4.id)
+photo13 = Photo.create(title: 'Lonely', description: 'Open road ahead', image_url: 'https://res.cloudinary.com/iso100app/image/upload/v1501203651/pexels-photo-512861_fiwdbn.jpg', user_id: user2.id)
+photo36 = Photo.create(title: 'Louve', description: 'Louve at night', image_url: 'https://res.cloudinary.com/iso100app/image/upload/v1501203647/louvre-102840_1280_it2q2q.jpg', user_id: user4.id)
+photo37 = Photo.create(title: 'DayTime', description: 'View from my room.', image_url: 'https://res.cloudinary.com/iso100app/image/upload/v1501203647/japan-217878_1920_qjjyfz.jpg', user_id: user4.id)
+photo38 = Photo.create(title: 'Love the City', description: 'Nice angle of the bridge', image_url: 'https://res.cloudinary.com/iso100app/image/upload/v1501203647/golden-gate-bridge-388917_1920_evyips.jpg', user_id: user4.id)
+photo18 = Photo.create(title: 'Vintage Setup', description: 'Stay at home day', image_url: 'https://res.cloudinary.com/iso100app/image/upload/v1501203650/pexels-photo-487426_a3jdh8.jpg', user_id: user2.id)
+photo44 = Photo.create(title: 'Sea of Cherries', description: 'Cherry Blossoms!!', image_url: 'https://res.cloudinary.com/iso100app/image/upload/v1501203646/boat-1835081_1920_kmilhd.jpg', user_id: user5.id)
+photo35 = Photo.create(title: 'Music', description: 'Music is life!', image_url: 'https://res.cloudinary.com/iso100app/image/upload/v1501203647/mockup-apple-samsung-product-85895_hyzwwx.jpg', user_id: user4.id)
+photo50 = Photo.create(title: 'Freedom', description: 'Lady Liberty', image_url: 'https://res.cloudinary.com/iso100app/image/upload/v1501217953/pexels-photo-515450_znlu0e.jpg', user_id: user5.id)
+photo27 = Photo.create(title: 'Perspective', description: 'Camera focus', image_url: 'https://res.cloudinary.com/iso100app/image/upload/v1501203648/pexels-photo-243757_c5hjgp.jpg', user_id: user3.id)
+photo42 = Photo.create(title: 'Rainbow', description: 'Who wants some??', image_url: 'https://res.cloudinary.com/iso100app/image/upload/v1501203646/colorful-2179198_1920_k93wvh.jpg', user_id: user5.id)
+photo45 = Photo.create(title: 'Blue Egg', description: 'Have you seen eggs this blue?', image_url: 'https://res.cloudinary.com/iso100app/image/upload/v1501203645/bird-nest-eggs-blue-158734_gi9e5i.jpg', user_id: user5.id)
+photo46 = Photo.create(title: 'Illusion', description: 'Bikes galore.', image_url: 'https://res.cloudinary.com/iso100app/image/upload/v1501203645/bicycles-bikes-cycle-row-464250_jqnyn5.jpg', user_id: user5.id)
+photo33 = Photo.create(title: 'Bird Watching', description: 'Had a great time!', image_url: 'https://res.cloudinary.com/iso100app/image/upload/v1501203648/nature-bird-flying-red_oue39d.jpg', user_id: user4.id)
+photo47 = Photo.create(title: 'Look through my Lens', description: '', image_url: 'https://res.cloudinary.com/iso100app/image/upload/v1501203646/background_zrboxq.jpg', user_id: user5.id)
+photo41 = Photo.create(title: 'Arrow', description: 'Slow shutter speed', image_url: 'https://res.cloudinary.com/iso100app/image/upload/v1501203646/eiffel-tower-1156146_1280_mxbrst.jpg', user_id: user5.id)
+photo31 = Photo.create(title: 'Beauty', description: 'Saw on way to work', image_url: 'https://res.cloudinary.com/iso100app/image/upload/v1501203648/peacock-bird-feather-close-71131_ogoqmh.jpg', user_id: user4.id)
+photo30 = Photo.create(title: 'Outdoor Bike', description: 'Daily bike ride', image_url: 'https://res.cloudinary.com/iso100app/image/upload/v1501203649/pexels-photo-100582_pzyrf7.jpg', user_id: user3.id)

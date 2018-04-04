@@ -1,0 +1,96 @@
+// Place all the styles related to the Api::Comments controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.comment-form-container ul li:hover {
+  background-color: white;
+}
+
+.comment-form-container ul li {
+  margin-bottom: 15px;
+}
+
+.username-blue {
+  color: rgb(44, 111, 167);
+  margin-right: 10px;
+}
+
+.username-blue:hover {
+  text-decoration: underline;
+}
+
+.username-show-page:hover {
+  color: rgb(44, 111, 167);
+  text-decoration: underline;
+}
+
+.comment-chunk {
+  border: 1px solid lightgray;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 100%;
+  display: flex;
+  border-radius: 10px;
+  padding-left: 11px;
+  font-size: 15px;
+  justify-content: space-between;
+}
+
+.comment-body {
+  display: flex;
+}
+
+.comments-container {
+  margin-top: 10px;
+}
+
+.comment-date {
+  display: flex;
+  flex-direction: column;
+}
+
+.comment-date div {
+  margin-right: 10px;
+}
+
+.comment-delete-button {
+  margin-right: 20px;
+}
+
+.comment-input-form {
+  border: 1px solid lightgray;
+  border-radius: 10px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 102%;
+  font-size: 14px;
+}
+
+.expanding-button:hover {
+  border: 1px solid lightgray;
+  width: 15px;
+  box-shadow: 1px 1px 1px lightgray;
+  text-align: center;
+}
+
+.comment-button {
+  position: absolute;
+  margin: 346px;
+  margin-top: 75px;
+}
+
+.text-area-comment {
+  padding-top: 10px;
+  padding-bottom: 90px;
+}
+
+.tag-button {
+  margin: 61%;
+  margin-top: 5%;
+}
+
+.tag-form {
+  height: 50px;
+  width: 200px;
+}

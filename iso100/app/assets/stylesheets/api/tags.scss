@@ -1,0 +1,23 @@
+// Place all the styles related to the Api::Tags controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.photo-tags {
+  display: flex;
+}
+
+.tags-li {
+  display: flex;
+  justify-content: space-around;
+  background-color: lightgray;
+  margin: 5px;
+  padding: 8px;
+  border-radius: 10px;
+}
+
+.tags-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+}

@@ -1,0 +1,137 @@
+// Place all the styles related to the Api::Photos controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.main-page-photos {
+  max-width: 480px;
+  max-height: 500px;
+  margin: 4%;
+  transition: all .5s;
+  margin-left: 10%;
+  background-color: rgb(243,245,246);
+}
+
+.main-page-photos:hover {
+  -webkit-box-shadow: 8px 8px 30px lightgray;
+  // margin-top: 3.9%;
+}
+
+
+.main-page-photo-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-top: 150px;
+  padding-bottom: 100px;
+  background-color: rgb(243,245,246);
+}
+
+.photo-detail-view-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(243,245,246);
+}
+
+.photo-detail-view {
+  margin-top: 60px;
+  display: flex;
+  position: relative;
+  background-color: rgb(33,33,36);
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  max-height: auto;
+  box-sizing: border-box;
+}
+
+.photo-edit-and-delete {
+  position: absolute;
+  margin: 2%;
+  margin-left: 41%;
+  display: flex;
+}
+
+.photo-edit-and-delete button {
+  min-width: 94px;
+  margin: 10px;
+  background-color: white;
+  justify-content: center;
+  padding: 7px;
+  align-items: center;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.photo-edit-and-delete button:hover {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.back-button {
+  position: absolute;
+  margin: -34%;
+  margin-left: -45%;
+  display: flex;
+  color: white;
+}
+
+.back-button:hover {
+  text-decoration: underline;
+}
+
+.add-album-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.albums-select {
+  background-color: white;
+  height: 27px;
+}
+
+.photo-detail-view img {
+  width: 50%
+}
+
+.photo-detail-container {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 200px;
+  padding-top: 20px;
+}
+
+.photo-detail-user-information {
+  margin-right: 100px;
+  font-size: 20px;
+}
+
+.photo-detail-tags, .photo-detail-user-information {
+  width: 450px;
+  height: auto;
+}
+
+.photo-detail-title {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.photo-detail-description {
+  font-size: 16px;
+  border-bottom: 1px solid black;
+}
+
+.selected-album {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 18px;
+  margin-top: 5px;
+}
