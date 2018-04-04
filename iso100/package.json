@@ -31,7 +31,7 @@
     "npm": "3.10.10"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
     "postinstall": "webpack"
   },
   "repository": {
@@ -44,5 +44,8 @@
   "bugs": {
     "url": "https://github.com/Ttang8/Iso100/issues"
   },
-  "homepage": "https://github.com/Ttang8/Iso100#readme"
+  "homepage": "https://github.com/Ttang8/Iso100#readme",
+  "devDependencies": {
+    "jest": "^22.4.3"
+  }
 }
