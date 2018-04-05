@@ -7,6 +7,7 @@ import merge from 'lodash/merge';
 const initialAlbum = {};
 
 const AlbumReducer = (state = {}, action) => {
+  console.log(state);
   Object.freeze(state);
   switch(action.type) {
     case RECEIVE_ALBUMS:
